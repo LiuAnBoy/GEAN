@@ -40,7 +40,6 @@ class Navbar extends React.Component {
             key="mail"
             icon={<MailOutlined />}
             className="Nav-btn"
-            style={{margin: 0}}
           >
             Navigation One
           </Menu.Item>
