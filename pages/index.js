@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react'
-import { Button } from 'antd'
-import Link from 'next/link'
-import Head from 'next/head'
+import Section from '../component/section/section.component'
 
 import Navbar from '../component/navbar/navbar.component'
 
@@ -12,7 +10,15 @@ class LandingPage extends React.Component {
   }
 
   render() {
-    return <Navbar />
+    return (
+      <Fragment>
+        {/* <Navbar /> */}
+
+        <Section color='#ffb3b3'/>
+        <Section color='#b3ccff'/>
+
+      </Fragment>
+    )
   }
 }
 

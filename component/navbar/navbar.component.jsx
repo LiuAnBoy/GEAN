@@ -1,78 +1,128 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
-
-import './navbar.styles.scss'
-
 import {
-  MailOutlined,
-  AppstoreOutlined,
-  SettingOutlined,
-} from '@ant-design/icons'
+  MenuitemStyle,
+  Logo,
+  LogoImg,
+  HeaderStyle,
+  MenuStyle,
+} from './navbar.styles.js'
 
-const { SubMenu } = Menu
+// import LOGO_W from '../../public/logo-w.svg'
+// import LOGO_B from '../../public/logo-b.svg'
+import './s.scss'
+
+const { Header } = Layout
 
 class Navbar extends React.Component {
-  state = {
-    current: 'mail',
+  constructor() {
+    super()
+    this.state = {
+      backgroundColor: 'white',
+      fontColor: 'black',
+      logo: '/logo-b.svg',
+    }
   }
 
-  handleClick = (e) => {
-    console.log('click ', e)
-    this.setState({ current: e.key })
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, { passive: true })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll = (e) => {
+    // 滾動的高度
+    const scrollTop =
+      (e.srcElement ? e.srcElement.documentElement.scrollTop : false) ||
+      window.pageYOffset ||
+      (e.srcElement ? e.srcElement.body.scrollTop : 0)
+    if (scrollTop > 0) {
+      this.setState({
+        backgroundColor: 'black',
+        fontColor: 'white',
+        logo: '/logo-w.svg',
+      })
+    } else {
+      this.setState({
+        backgroundColor: 'white',
+        fontColor: 'black',
+        logo: '/logo-b.svg',
+      })
+    }
   }
 
   render() {
-    const { current } = this.state
     return (
-      <div style={{ backgroundColor: '#0F1F2E', height: 60 }}>
-        <Menu
-          onClick={this.handleClick}
-          selectedKeys={[current]}
-          mode="horizontal"
-          style={{
-            backgroundColor: '#0F1F2E',
-            float: 'right',
-            color: 'white',
-            height: 60,
-          }}
-        >
+      <Header
+        style={{
+          ...HeaderStyle,
+          backgroundColor: this.state.backgroundColor,
+        }}
+        className="animation"
+      >
+        <Logo className="logo">
+          <LogoImg src={this.state.logo} alt="logo" />
+        </Logo>
+        <Menu theme="dark" mode="horizontal" style={MenuStyle}>
           <Menu.Item
-            key="mail"
-            icon={<MailOutlined />}
-            className="Nav-btn"
+            key="1"
+            style={{
+              ...MenuitemStyle,
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.fontColor,
+            }}
+            className="animation"
           >
-            Navigation One
+            <h4 style={{margin: 0}}>巴拉巴拉1</h4>
           </Menu.Item>
           <Menu.Item
-            key="mail"
-            icon={<MailOutlined />}
-            className="Nav-btn"
+            key="2"
+            style={{
+              ...MenuitemStyle,
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.fontColor,
+            }}
+            className="animation"
           >
-            Navigation One
+            <h4 style={{margin: 0}}>巴拉巴拉2</h4>
           </Menu.Item>
           <Menu.Item
-            key="mail"
-            icon={<MailOutlined />}
-            className="Nav-btn"
+            key="3"
+            style={{
+              ...MenuitemStyle,
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.fontColor,
+            }}
+            className="animation"
           >
-            Navigation One
+            <h4 style={{margin: 0}}>巴拉巴拉3</h4>
           </Menu.Item>
           <Menu.Item
-            key="mail"
-            icon={<MailOutlined />}
-            className="Nav-btn"
+            key="4"
+            style={{
+              ...MenuitemStyle,
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.fontColor,
+            }}
+            className="animation"
           >
-            Navigation One
+            <h4 style={{margin: 0}}>巴拉巴拉4</h4>
           </Menu.Item>
           <Menu.Item
-            key="mail"
-            icon={<MailOutlined />}
-            className="Nav-btn"
+            key="5"
+            style={{
+              ...MenuitemStyle,
+              backgroundColor: this.state.backgroundColor,
+              color: this.state.fontColor,
+            }}
+            className="animation"
           >
-            Navigation One
+            <h4 style={{margin: 0}}>巴拉巴拉5</h4>
           </Menu.Item>
         </Menu>
-      </div>
+      </Header>
     )
   }
 }
