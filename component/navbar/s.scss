@@ -2,23 +2,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.top-font {
-  margin: 0;
-  position: relative;
-  background-color: blue;
-  &:hover {
-    top: 30px;
-    opacity: 1;
-    display: block;
-    transition: all 0.3s ease-in-out;
-  }
-}
-
-.bottom-font {
-  position: relative;
-  
-}
-
 .gfont {
   margin: 0;
 }

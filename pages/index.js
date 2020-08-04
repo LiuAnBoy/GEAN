@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react'
-import Section from '../component/section/section.component'
 
-import Navbar from '../component/navbar/navbar.component'
+import Banner from '../component/section/banner/banner.component'
+import Works from '../component/section/works/works.component'
+import Service from '../component/section/service/service.component'
+import Process from '../component/section/process/process.component'
 
 class LandingPage extends React.Component {
   constructor() {
@@ -12,11 +14,10 @@ class LandingPage extends React.Component {
   render() {
     return (
       <Fragment>
-        {/* <Navbar /> */}
-
-        <Section color='#ffb3b3'/>
-        <Section color='#b3ccff'/>
-
+        <Banner color='#0F1F2E' />
+        <Works color='white' />
+        <Service color='#0F1F2E' />
+        <Process color='white' />
       </Fragment>
     )
   }

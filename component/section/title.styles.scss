@@ -1,0 +1,47 @@
+.title {
+  top: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 47px 0;
+  &::before {
+    background: url(/title_line.svg);
+    width: 45px;
+    height: 45px;
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    background-size: 45px auto;
+    top: 0;
+    left: 13rem;
+    right: 0;
+    transform-origin: right top;
+    animation: shining 0.3s linear infinite;
+  }
+  &::after {
+    background: url(/title_line.svg);
+    width: 45px;
+    height: 45px;
+    content: '';
+    position: absolute;
+    margin: 0 auto;
+    background-size: 45px auto;
+    left: 0;
+    right: 13rem;
+    transform-origin: right top;
+    animation: shining 0.3s linear infinite;
+  }
+}
+
+h2 {
+  font-size: 3.4rem;
+  margin: 0;
+  letter-spacing: 1rem;
+}
+
+h3 {
+  margin: .8rem 0 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}

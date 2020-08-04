@@ -18,6 +18,7 @@ export const HeaderStyle = {
   backgroundColor: 'white',
   position: 'fixed',
   width: '100%',
+  zIndex: 999,
 }
 
 export const Logo = styled.div`
