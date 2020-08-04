@@ -8,8 +8,6 @@ import {
   MenuStyle,
 } from './navbar.styles.js'
 
-// import LOGO_W from '../../public/logo-w.svg'
-// import LOGO_B from '../../public/logo-b.svg'
 import './s.scss'
 
 const { Header } = Layout
@@ -63,7 +61,7 @@ class Navbar extends React.Component {
         className="animation"
       >
         <Logo className="logo">
-          <LogoImg src={this.state.logo} alt="logo" />
+          <LogoImg src='/' alt="logo" />
         </Logo>
         <Menu theme="dark" mode="horizontal" style={MenuStyle}>
           <Menu.Item
@@ -119,7 +117,8 @@ class Navbar extends React.Component {
             }}
             className="animation"
           >
-            <h4 style={{margin: 0}}>巴拉巴拉5</h4>
+            <h4 className='top-font gfont'>巴拉巴拉上</h4>
+            巴拉巴拉下
           </Menu.Item>
         </Menu>
       </Header>
