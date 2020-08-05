@@ -24,7 +24,7 @@ const Banner = ({ color }) => {
 
   return (
     <Section style={{ backgroundColor: color }}>
-      <LogoImg
+      <img
         src='/geandesignstudio_logo.svg'
         alt='Logo'
         style={{
@@ -33,6 +33,7 @@ const Banner = ({ color }) => {
           top: '26%',
           left: '50%',
           transform: 'translateX(-50%)',
+          margin: '0 auto',
         }}
       />
       <div
