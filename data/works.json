@@ -1,0 +1,50 @@
+{
+  "works": [
+    {
+      "id": "1",
+      "name": "宜倫命理工作室",
+      "company": "宜倫命理工作室",
+      "tags": ["品牌識別", "名片設計", "簡報範本"],
+      "img": "/works/iloom/geandesignstudio_project-iloom.jpg",
+      "banner": "/works/iloom/project_content-iloom-2.jpg"
+    },
+    {
+      "id": "2",
+      "name": "騰強科技官方網站",
+      "company": "騰強科技有限公司",
+      "tags": ["規劃方案", "BANNER設計", "網頁設計", "程式撰寫", "資料庫架設"],
+      "img": "/works/tci/geandesignstudio_project-tci.jpg",
+      "banner": "/works/tci/project_content-tci-1.jpg"
+    },
+    {
+      "id": "3",
+      "name": "口袋日本2018聖誕年末禮物提案",
+      "company": "台灣微告MicroAd.Taiwan, Ltd.",
+      "tags": ["規劃方案", "網頁設計", "程式撰寫"],
+      "img": "/works/pocket_japan/geandesignstudio_project-pocket_japan.jpg",
+      "banner": "/works/pocket_japan/project_content-pocket_japan_2018-1.jpg"
+    },
+    {
+      "id": "4",
+      "name": "漢樺磁磚概念館",
+      "company": "漢樺企業股份有限公司",
+      "tags": ["規劃方案", "UI / UX設計", "程式撰寫", "資料庫架設"],
+      "img": "/works/hanword/geandesignstudio_project-hanword.jpg",
+      "banner": "/works/hanword/project_content-hanword-1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "鴻網工作室形象設計",
+      "company": " 鴻網有限公司",
+      "tags": ["品牌識別", "名片設計"],
+      "img": "/works/hanword/geandesignstudio_project-hanword.jpg"
+    },
+    {
+      "id": "6",
+      "name": "德國百妮粉鑽潤色CC霜廣告DM",
+      "company": "德國百妮",
+      "tags": ["DM設計"],
+      "img": "/works/hanword/geandesignstudio_project-hanword.jpg"
+    }
+  ]
+}
