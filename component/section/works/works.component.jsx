@@ -17,14 +17,14 @@ const contentStyle = {
   width: 1200,
   position: 'relative',
   margin: '0 auto',
-  left: '42%',
+  left: '80%',
 }
 
 const settings = {
   className: 'center',
   centerMode: true,
   infinite: true,
-  centerPadding: 630,
+  centerPadding: 400,
   slidesToShow: 1,
   speed: 300,
 }
@@ -34,39 +34,39 @@ const carousel = {
   top: '13%',
 }
 
+//TODO: Render Carousel option
+
 const Works = ({ color }) => (
   <Section style={{ backgroundColor: color }}>
-    <SectionTitle title='WORKS' subtitle='實作案例' />
+    <SectionTitle title="WORKS" subtitle="實作案例" />
     <div style={carousel}>
       <Carousel autoplay {...settings}>
-        {data.works
+        {/* {data.works
           .filter(work => work.id <= 3)
           .map((work, i) => {
-            // <CItems key={work.id} img={work.img} />
-            <div>123</div>
-          })}
-        {/* <CItems img={`${data.works[0].img}`}/>
+            <CItems key={work.id} img={work.img} />
+            // console.log(work.id)
+          })} */}
+        {/* <CItems img={`${data.works[0].img}`} /> */}
         <div>
-          <img
-            src='/geandesignstudio_project-iloom.jpg'
-            alt='iloom'
-            style={contentStyle}
-          />
+          <CItems img={`${data.works[0].img}`} />
         </div>
         <div>
-          <img
-            src='/geandesignstudio_project-iloom.jpg'
-            alt='iloom'
+          {/* <img
+            src="/geandesignstudio_project-iloom.jpg"
+            alt="iloom"
             style={contentStyle}
-          />
+          /> */}
+          <CItems img={`${data.works[0].img}`} />
         </div>
         <div>
-          <img
-            src='/geandesignstudio_project-iloom.jpg'
-            alt='iloom'
+          {/* <img
+            src="/geandesignstudio_project-iloom.jpg"
+            alt="iloom"
             style={contentStyle}
-          />
-        </div> */}
+          /> */}
+          <CItems img={`${data.works[0].img}`} />
+        </div>
       </Carousel>
     </div>
   </Section>

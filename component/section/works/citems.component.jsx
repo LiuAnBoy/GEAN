@@ -6,10 +6,10 @@ const contentStyle = {
   lineHeight: '160px',
   textAlign: 'center',
   background: '#364d79',
-  width: 1200,
+  width: 800,
   position: 'relative',
   margin: '0 auto',
-  left: '42%',
+  left: '46%',
 }
 
 const CItems = ({ img }) => (
