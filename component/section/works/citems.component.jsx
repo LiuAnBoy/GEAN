@@ -19,7 +19,7 @@ const CItems = ({ img }) => (
 )
 
 CItems.propTypes = {
-  img: PropTypes.object.isRequired,
+  img: PropTypes.object,
 }
 
 export default CItems
