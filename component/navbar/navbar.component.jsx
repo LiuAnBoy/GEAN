@@ -1,14 +1,8 @@
 import React from 'react'
 import { Layout, Menu } from 'antd'
-import {
-  MenuitemStyle,
-  Logo,
-  LogoImg,
-  HeaderStyle,
-  MenuStyle,
-} from './navbar.styles.js'
+import { MenuitemStyle, HeaderStyle } from './navbar.styles.js'
 
-import './s.scss'
+import './navbar.style.scss'
 
 const { Header } = Layout
 
@@ -30,7 +24,7 @@ class Navbar extends React.Component {
     window.removeEventListener('scroll', this.handleScroll)
   }
 
-  handleScroll = e => {
+  handleScroll = (e) => {
     // 滾動的高度
     const scrollTop =
       (e.srcElement ? e.srcElement.documentElement.scrollTop : false) ||
@@ -58,67 +52,73 @@ class Navbar extends React.Component {
           ...HeaderStyle,
           backgroundColor: this.state.backgroundColor,
         }}
-        className='animation'>
-        <Logo className='logo'>
-          <LogoImg src={this.state.logo} alt='logo' />
-        </Logo>
-        <Menu theme='dark' mode='horizontal' style={MenuStyle}>
+        className="animation"
+      >
+        <div className="logo">
+          <img src={this.state.logo} alt="logo" />
+        </div>
+        <Menu mode="horizontal" className="menustyle">
           <Menu.Item
-            key='1'
+            key="1"
             style={{
               ...MenuitemStyle,
               backgroundColor: this.state.backgroundColor,
               color: this.state.fontColor,
             }}
-            className='animation'>
+            className="animation"
+          >
             <h4 style={{ color: this.state.fontColor, margin: 0 }}>
               巴拉巴拉1
             </h4>
           </Menu.Item>
           <Menu.Item
-            key='2'
+            key="2"
             style={{
               ...MenuitemStyle,
               backgroundColor: this.state.backgroundColor,
               color: this.state.fontColor,
             }}
-            className='animation'>
+            className="animation"
+          >
             <h4 style={{ color: this.state.fontColor, margin: 0 }}>
               巴拉巴拉2
             </h4>
           </Menu.Item>
           <Menu.Item
-            key='3'
+            key="3"
             style={{
               ...MenuitemStyle,
               backgroundColor: this.state.backgroundColor,
               color: this.state.fontColor,
             }}
-            className='animation'>
+            className="animation"
+          >
             <h4 style={{ color: this.state.fontColor, margin: 0 }}>
               巴拉巴拉3
             </h4>
           </Menu.Item>
           <Menu.Item
-            key='4'
+            key="4"
             style={{
               ...MenuitemStyle,
               backgroundColor: this.state.backgroundColor,
               color: this.state.fontColor,
             }}
-            className='animation'>
+            className="animation"
+          >
             <h4 style={{ color: this.state.fontColor, margin: 0 }}>
               巴拉巴拉4
             </h4>
           </Menu.Item>
           <Menu.Item
-            key='5'
+            key="5"
             style={{
               ...MenuitemStyle,
               backgroundColor: this.state.backgroundColor,
               color: this.state.fontColor,
             }}
-            className='animation'>
+            className="animation"
+          >
             <h4 style={{ color: this.state.fontColor, margin: 0 }}>
               巴拉巴拉上
             </h4>

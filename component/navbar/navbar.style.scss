@@ -1,0 +1,22 @@
+.logo {
+  display: inline-block;
+
+  img {
+    width: 150px;
+    max-width: 190px;
+  }
+}
+
+.menustyle {
+  float: right;
+  background-color: white;
+}
+
+.animation {
+  transition: all 0.3s ease-in-out;
+  padding: 0;
+}
+
+.gfont {
+  margin: 0;
+}
